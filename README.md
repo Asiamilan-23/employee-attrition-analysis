@@ -35,3 +35,5 @@ La variabile target è:
 ## Membri del gruppo
 - Asia Milan
 - Paolo Magnanelli
+
+ ## Prima analisi esplorativa del dataset.
