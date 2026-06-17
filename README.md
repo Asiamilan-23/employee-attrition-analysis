@@ -94,22 +94,35 @@ L'analisi esplorativa è strutturata in due fasi principali:
 
 ---
 ## Struttura del repository (DA SISTEMARE)
-
-├── data/
-│   ├── Employee_Attrition/               # Dataset originale
-│   └── processed/         # Dataset pre-processato
-├── notebooks/
-│   ├── 01_eda.ipynb        # Analisi esplorativa
-│   ├── 02_preprocessing.ipynb
-│   └── 03_modeling.ipynb   # Training e valutazione modelli
-├── src/
-│   ├── preprocessing.py
-│   └── models.py
-├── reports/
-│   └── relazione.pdf       # Report LaTeX compilato
-├── requirements.txt
-└── README.md
-
+```
+├── **data**/
+│   ├── Employee_Attrition.csv        # Dataset originale
+│   └── data_description.csv          # Descrizione delle variabili
+├── **notebooks**/
+│   ├── Progetto_IntroDCeDS_g4-2.ipynb  
+│   ├── Progetto_IntroDCeDS_g4.ipynb
+│   ├── Progetto_IntroDCeDS_g4_2.ipynb
+│   ├── Progetto_IntroDCeDS_merged.ipynb
+│   └── Progetto_IntroDCeDS_merged_def.ipynb  # Notebook finale
+├── **reports**/
+│   ├── *figures*/                     # Grafici utilizzati nel report
+│   │   ├── fase2_domanda8_correlazione.png
+│   │   ├── fase3_domanda5_eta_esperienza_heatmap.png
+│   │   ├── fase4_knn_accuracy_k.png
+│   │   ├── fase5_coefficienti_logistica.png
+│   │   ├── fase5_confronto_metriche_modelli.png
+│   │   ├── fase5_confusion_logistica.png
+│   │   ├── fase5_feature_importance_rf.png
+│   │   ├── fase5bis_curva_roc.png
+│   │   └── fase5bis_precision_recall.png
+│   │
+│   ├── *tau-class*/                        # File LaTeX del report
+│   │   ├── Report Employee Attrition.pdf   # Report finale
+|   |   ├── example.py
+|   |   ├── main.tex
+│   │   └── tau.bib   
+├── README.md
+```l
 ---
 ## Istruzioni per l’esecuzione
 
