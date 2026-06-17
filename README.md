@@ -93,7 +93,7 @@ L'analisi esplorativa è strutturata in due fasi principali:
 ‼️ Data la natura sbilanciata del dataset, particolare attenzione è stata posta al *recall* considerato più rilevante dell’*accuracy* complessiva.
 
 ---
-## Struttura del repository (DA SISTEMARE)
+## Struttura del repository 
 ```
 ├── **data**/
 │   ├── Employee_Attrition.csv        # Dataset originale
