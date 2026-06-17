@@ -139,14 +139,8 @@ cd employee-attrition
 install pandas numpy matplotlib seaborn scikit-learn 
 ```
 
-#### 3. Apri Jupyter Notebook:
-```
-jupyter notebook
-```
-
-#### 4. Eseguire il progetto
-- [ ] Apri il file .ipynb
-- [ ] Esegui tutte le celle una dopo l’altra (da sopra a sotto)
+#### 3. Apri il file `.ipynb` direttamente su Google Colab
+- Esegui tutte le celle
 
 ---
 
