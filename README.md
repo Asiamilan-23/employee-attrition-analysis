@@ -14,7 +14,9 @@
 ---
 
 ## Descrizione del progetto
-Questo progetto analizza il fenomeno dell’attrition dei dipendenti, ovvero l’abbandono dell’azienda, utilizzando tecniche di data analysis e machine learning. Attraverso l’analisi del dataset `Employee Attrition`, questo progetto analizza il fenomeno dell’attrition dei dipendenti, ovvero l’abbandono dell’azienda, utilizzando tecniche di data analysis e machine learning.
+Questo progetto analizza il fenomeno dell’attrition dei dipendenti, ovvero l’abbandono dell’azienda, utilizzando tecniche di data analysis e machine learning. Attraverso l’analisi del dataset `Employee Attrition`, vengono individuati i principali fattori che influenzano la decisione di lasciare il lavoro e costruiti modelli di classificazione per prevedere i dipendenti a rischio. 
+
+‼️ L’attrition rappresenta un problema rilevante per le aziende in quanto comporta costi diretti e indiretti legati alla sostituzione del personale e alla perdita di competenze.
 
 ---
 
@@ -87,11 +89,14 @@ L'analisi esplorativa è strutturata in due fasi principali:
 - **Precision, Recall, F1-score**: calcolati sulla classe minoritaria `Attrition = Yes`
 - **ROC-AUC**: confronto tra modelli indipendente dalla soglia di decisione
 - **Curva Precision-Recall**: analisi del comportamento al variare della soglia (Regressione Logistica)
+
+‼️ Data la natura sbilanciata del dataset, particolare attenzione è stata posta al *recall* considerato più rilevante dell’*accuracy* complessiva.
+
 ---
 ## Struttura del repository (DA SISTEMARE)
 
 ├── data/
-│   ├── raw/               # Dataset originale
+│   ├── Employee_Attrition/               # Dataset originale
 │   └── processed/         # Dataset pre-processato
 ├── notebooks/
 │   ├── 01_eda.ipynb        # Analisi esplorativa
@@ -163,7 +168,7 @@ La **regressione logistica** ha ottenuto le migliori prestazioni complessive, ri
 
 ### Modello migliore
 La **Regressione Logistica** risulta il modello più efficace, grazie alle migliori prestazioni complessive e a un buon equilibrio tra *precision* e *recall*. In particolare, è il modello più adatto quando l’obiettivo è identificare i dipendenti a rischio di attrition.
-> Inoltre, abbassare la soglia di decisione (inferiore a 0.5) permette di aumentare il *recall*, riducendo i falsi negativi. Questa scelta è utile in contesti reali, dove non individuare un dipendente a rischio è più grave rispetto a generare un falso negativo.
+> Un aspetto importante riguarda la soglia di decisione: abbassare la soglia sotto 0.5 permette di aumentare il *recall*, migliorando la capacità di individuare i dipendenti a rischio.
 
 ### Confronto tra modelli
 Dal confronto emerge che:
