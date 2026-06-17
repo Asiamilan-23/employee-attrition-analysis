@@ -142,6 +142,17 @@ install pandas numpy matplotlib seaborn scikit-learn
 #### 3. Apri il file `.ipynb` direttamente su Google Colab
 - Esegui tutte le celle
 
+### Oppure
+#### 1. Apri Google Colab e carica il notebook direttamente da GitHub:
+```
+   File > Apri notebook > GitHub > https://github.com/Asiamilan-23/employee-attrition-analysis
+```
+#### 2. Installa le librerie necessarie eseguendo questa cella all'inizio del notebook:
+```
+   !pip install pandas numpy matplotlib seaborn scikit-learn
+```
+#### 3. Esegui tutte le celle del notebook
+
 ---
 
 ## Dipendenze Principali
