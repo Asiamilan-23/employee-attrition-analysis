@@ -130,8 +130,8 @@ L'analisi esplorativa è strutturata in due fasi principali:
 #### 1. Clona il repository sul tuo computer:
 
 ```
-git clone https://github.com/asiamilan/employee-attrition.git (DA CONTROLLARE)
-cd employee-attrition
+git clone https://github.com/Asiamilan-23/employee-attrition-analysis
+cd employee-attrition-analysis
 ```
 
 #### 2. Installa tutte le librerie necessarie:
