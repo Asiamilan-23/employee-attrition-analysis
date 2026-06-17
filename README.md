@@ -38,7 +38,7 @@ L’obiettivo del progetto è analizzare e prevedere il fenomeno dell’**attrit
 
 ---
 ## Tecnologie utilizzate
-- Python  
+- Python → linguaggio di programmazione
 - pandas, numpy → gestione dati  
 - matplotlib, seaborn → visualizzazione  
 - scikit-learn → modelli di machine learning  
