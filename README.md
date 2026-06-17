@@ -14,14 +14,14 @@
 ---
 
 ## Descrizione del progetto
-Questo progetto analizza il fenomeno dell’attrition dei dipendenti, ovvero l’abbandono dell’azienda, utilizzando tecniche di data analysis e machine learning. Attraverso l’analisi del dataset `Employee Attrition`, vengono individuati i principali fattori che influenzano la decisione di lasciare il lavoro, e vengono poi costruiti diversi modelli di classificazione per prevedere i dipendenti a rischio.  
+Questo progetto analizza il fenomeno dell’attrition dei dipendenti, ovvero l’abbandono dell’azienda, utilizzando tecniche di data analysis e machine learning. Attraverso l’analisi del dataset `Employee Attrition`, questo progetto analizza il fenomeno dell’attrition dei dipendenti, ovvero l’abbandono dell’azienda, utilizzando tecniche di data analysis e machine learning.
 
 ---
 
 ## Descrizione del dataset
 
 - **Nome dataset:** Employee Attrition 
-- **Dimensioni:** 1470 righe x 35 colonne
+- **Dimensioni:** 1470 righe x 35 colonne (26 numeriche, 9 categoriche)
 - **Periodo di riferimento:** non specificato
 - **Variabile target:** `Attrition` (`Yes` = lascia, `No` = rimane)
 - **Features principali:** `Age`, `MonthlyIncome`, `JobSatisfaction`, `WorkLifeBalance`, `OverTime`, `TotalWorkingYears`, `YearsAtCompany`, `JobRole`, `Department`
@@ -37,10 +37,20 @@ L’obiettivo del progetto è analizzare e prevedere il fenomeno dell’**attrit
 - confrontare diversi modelli predittivi.
 
 ---
+## Tecnologie utilizzate
+- Python  
+- pandas, numpy → gestione dati  
+- matplotlib, seaborn → visualizzazione  
+- scikit-learn → modelli di machine learning  
+- Google Colab → ambiente di sviluppo  
+- GitHub → gestione del codice e versionamento  
+- Copilot, Claude → supporto nello sviluppo e nella revisione
+  
+---
 ## Analisi dei dati
 L'analisi esplorativa è strutturata in due fasi principali:
 ### 1.  *Fase 2 — Descrizione e comprensione del dataset*
-- [ ] **Statistiche descrittive**: panoramica su dimensioni, tipi di variabili e statistiche di riepilogo (`df.info()`, `df.describe()`). Il dataset conta 1470 osservazioni e 35 colonne (26 numeriche, 9 categoriche).
+- [ ] **Statistiche descrittive**: panoramica su dimensioni, tipi di variabili e statistiche di riepilogo (`df.info()`, `df.describe()`).
 - [ ] **Gestione dei valori mancanti**: verifica tramite `df.isna().sum()` dove nessun valore mancante è stato rilevato.
 - [ ] **Identificazione variabili costanti**: rilevate e rimosse 3 colonne non informative (`EmployeeCount`, `Over18`, `StandardHours`), che presentano un unico valore in tutto il dataset.
 - [ ] **Analisi della distribuzione della variabile target**: `Attrition` risulta sbilanciata (~84% `No` vs ~16% `Yes`: class imbalance); visualizzata con grafico countplot.
@@ -68,7 +78,7 @@ L'analisi esplorativa è strutturata in due fasi principali:
 |---------------------------|-------------------------|--------------|
 | **Regressione Logistica** (con e senza standardizzazione)| Classificazione lineare | scikit-learn |
 | **k-Nearest Neighbors (k=14)** | Classificazione (non lineare) | scikit-learn |
-|**Rando Forest (200 estimators)** | Classificazione (non lineare, ensemble)| scikit-learn|
+|**Random Forest (200 estimators)** | Classificazione (non lineare, ensemble)| scikit-learn|
 |**Decision Tree** | Classificazione (non lineare)| scikit-learn|
 
 
@@ -133,7 +143,6 @@ scikit-learn
 ```
 ---
 ## Risultati principali
-Il dataset contiene 1470 osservazioni e 35 variabili.  
 La variabile target `Attrition` è sbilanciata:
 - circa 84% No (rimane)
 - circa 16% Yes (lascia l'azienda)
