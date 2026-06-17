@@ -122,7 +122,7 @@ L'analisi esplorativa è strutturata in due fasi principali:
 |   |   ├── main.tex
 │   │   └── tau.bib   
 ├── README.md
-```l
+```
 ---
 ## Istruzioni per l’esecuzione
 
