@@ -52,18 +52,18 @@ L’obiettivo del progetto è analizzare e prevedere il fenomeno dell’**attrit
 ## Analisi dei dati
 L'analisi esplorativa è strutturata in due fasi principali:
 ### 1.  *Fase 2 — Descrizione e comprensione del dataset*
-- [ ] **Statistiche descrittive**: panoramica su dimensioni, tipi di variabili e statistiche di riepilogo (`df.info()`, `df.describe()`).
-- [ ] **Gestione dei valori mancanti**: verifica tramite `df.isna().sum()` dove nessun valore mancante è stato rilevato.
-- [ ] **Identificazione variabili costanti**: rilevate e rimosse 3 colonne non informative (`EmployeeCount`, `Over18`, `StandardHours`), che presentano un unico valore in tutto il dataset.
-- [ ] **Analisi della distribuzione della variabile target**: `Attrition` risulta sbilanciata (~84% `No` vs ~16% `Yes`: class imbalance); visualizzata con grafico countplot.
-- [ ] **Rilevazione degli outliers**: analisi tramite boxplot su `MonthlyIncome`, `YearsAtCompany` e `TotalWorkingYears`. Gli outliers identificati rappresentano situazioni realistiche (come dipendenti senior/dirigenziali) e non errori di rilevazione. Sono stati mantenuti nel dataset.
-- [ ] **Analisi delle correlazioni**: heatmap delle correlazioni tra variabili numeriche. Correlazioni più forti tra `MonthlyIncome` e `JobLevel` (~0.95), tra `TotalWorkingYears` e `JobLevel` (~0.78). Alcune variabili legate all’anzianità lavorativa risultano fortemente correlate tra loro (correlazione tra 0.71 e 0.77).
+- **Statistiche descrittive**: panoramica su dimensioni, tipi di variabili e statistiche di riepilogo (`df.info()`, `df.describe()`).
+- **Gestione dei valori mancanti**: verifica tramite `df.isna().sum()` dove nessun valore mancante è stato rilevato.
+- **Identificazione variabili costanti**: rilevate e rimosse 3 colonne non informative (`EmployeeCount`, `Over18`, `StandardHours`), che presentano un unico valore in tutto il dataset.
+- **Analisi della distribuzione della variabile target**: `Attrition` risulta sbilanciata (~84% `No` vs ~16% `Yes`: class imbalance); visualizzata con grafico countplot.
+- **Rilevazione degli outliers**: analisi tramite boxplot su `MonthlyIncome`, `YearsAtCompany` e `TotalWorkingYears`. Gli outliers identificati rappresentano situazioni realistiche (come dipendenti senior/dirigenziali) e non errori di rilevazione. Sono stati mantenuti nel dataset.
+- **Analisi delle correlazioni**: heatmap delle correlazioni tra variabili numeriche. Correlazioni più forti tra `MonthlyIncome` e `JobLevel` (~0.95), tra `TotalWorkingYears` e `JobLevel` (~0.78). Alcune variabili legate all’anzianità lavorativa risultano fortemente correlate tra loro (correlazione tra 0.71 e 0.77).
 
 
 
 ### 2.  *Fase 3 — Analisi esplorativa e grafici rispetto al target*
-- [ ] **Analisi della distribuzione delle variabili**: distribuzione dell'età (`Age`) per gruppo di `Attrition` (histplot + KDE); distribuzione congiunta esperienza–reddito (scatterplot + kdeplot 2D).
-- [ ] **Grafici**: barplot, boxplot, countplot, heatmap, catplot, scatterplot con densità bivariata per esplorare le relazioni tra features e attrition.
+- **Analisi della distribuzione delle variabili**: distribuzione dell'età (`Age`) per gruppo di `Attrition` (histplot + KDE); distribuzione congiunta esperienza–reddito (scatterplot + kdeplot 2D).
+- **Grafici**: barplot, boxplot, countplot, heatmap, catplot, scatterplot con densità bivariata per esplorare le relazioni tra features e attrition.
 
 >*Domande analitiche affrontate*:
 > - `OverTime` è fortemente associato all'`Attrition`: ~31% di abbandono tra chi fa straordinari contro il ~10% tra chi non ne fa.
